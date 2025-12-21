@@ -4,16 +4,22 @@
   box-sizing: border-box;
 }
 
-/* FUNDO BASE */
+/* =========================
+   BASE
+   ========================= */
 body {
   font-family: 'Inter', sans-serif;
   background: #fdecef;
   color: #2b2b2b;
+  padding-top: 180px; /* COMPENSA HEADER FIXO */
 }
 
-/* HEADER */
+/* =========================
+   HEADER
+   ========================= */
 .header {
   position: fixed;
+  top: 0;
   width: 100%;
   background: #fdecef;
   border-bottom: 1px solid rgba(0,0,0,0.08);
@@ -32,9 +38,9 @@ body {
   justify-content: space-between;
 }
 
-/* 🔥 LOGO AINDA MAIOR */
+/* LOGO */
 .logo {
-  height: 130px; /* AUMENTADO */
+  height: 130px;
   object-fit: contain;
 }
 
@@ -42,55 +48,52 @@ body {
 nav a {
   margin-left: 2rem;
   text-decoration: none;
-  color: #3a1f24; /* MAIS CONTRASTE */
+  color: #3a1f24;
   font-weight: 500;
 }
 
-/* HERO */
+/* =========================
+   HERO
+   ========================= */
 .hero {
-  height: 95vh;
+  min-height: 95vh;
   display: flex;
   align-items: center;
   padding: 0 8%;
   background:
     linear-gradient(
       to right,
-      rgba(255, 190, 200, 0.75), /* overlay MAIS FORTE */
+      rgba(255, 190, 200, 0.75),
       rgba(255, 190, 200, 0.45)
     ),
     url('../assets/images/banner.jpg') center/cover no-repeat;
-  color: #2b2b2b; /* TEXTO ESCURO */
 }
 
 .hero-content {
   max-width: 540px;
 }
 
-/* TAGLINE */
 .tagline {
   text-transform: uppercase;
   letter-spacing: 3px;
   font-size: 0.8rem;
-  color: #7a3e47; /* ESCURO E LEGÍVEL */
+  color: #7a3e47;
   font-weight: 500;
 }
 
-/* TÍTULO */
 .hero h1 {
   font-family: 'Playfair Display', serif;
   font-size: 4.2rem;
   margin: 1rem 0;
-  color: #3a1f24; /* NÍTIDO */
+  color: #3a1f24;
 }
 
-/* TEXTO */
 .hero p {
   font-size: 1.15rem;
   margin-bottom: 2rem;
-  color: #4a2a30; /* CONTRASTE */
+  color: #4a2a30;
 }
 
-/* BOTÃO */
 .btn-primary {
   background: #3a1f24;
   color: #ffffff;
@@ -100,7 +103,9 @@ nav a {
   font-weight: 500;
 }
 
-/* PRODUTOS */
+/* =========================
+   PRODUTOS
+   ========================= */
 .produtos {
   padding: 7rem 8%;
   background: #ffffff;
@@ -151,7 +156,9 @@ nav a {
   color: #6b3b44;
 }
 
-/* DIFERENCIAIS */
+/* =========================
+   DIFERENCIAIS
+   ========================= */
 .diferenciais {
   padding: 6rem 8%;
   background: #fdf4f7;
@@ -172,7 +179,9 @@ nav a {
   color: #4a2a30;
 }
 
-/* SOBRE */
+/* =========================
+   SOBRE
+   ========================= */
 .sobre {
   padding: 6rem 8%;
   background: #ffffff;
@@ -193,7 +202,9 @@ nav a {
   color: #4a2a30;
 }
 
-/* CONTATO */
+/* =========================
+   CONTATO
+   ========================= */
 .contato {
   padding: 6rem 8%;
   background: #3a1f24;
@@ -212,7 +223,9 @@ nav a {
   font-weight: 500;
 }
 
-/* FOOTER */
+/* =========================
+   FOOTER
+   ========================= */
 footer {
   padding: 1.5rem;
   background: #2b1519;
@@ -220,12 +233,16 @@ footer {
   text-align: center;
   font-size: 0.85rem;
 }
+
 /* =========================
    RESPONSIVO - MOBILE
    ========================= */
 @media (max-width: 768px) {
 
-  /* HEADER */
+  body {
+    padding-top: 150px;
+  }
+
   .container {
     padding: 1.2rem 1.4rem;
   }
@@ -236,18 +253,23 @@ footer {
   }
 
   .logo {
-    height: 90px; /* menor no mobile */
+    height: 90px;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   nav a {
-    margin: 0 0.8rem;
+    margin: 0.4rem 0.8rem;
     font-size: 0.9rem;
   }
 
-  /* HERO */
   .hero {
-    height: auto;
-    padding: 8rem 1.5rem 4rem;
+    min-height: auto;
+    padding: 3rem 1.5rem 4rem;
     text-align: center;
   }
 
@@ -256,62 +278,38 @@ footer {
   }
 
   .hero h1 {
-    font-size: 2.8rem;
+    font-size: 2.6rem;
   }
 
   .hero p {
     font-size: 1rem;
   }
 
-  /* BOTÃO */
   .btn-primary {
     padding: 14px 28px;
   }
 
-  /* PRODUTOS */
-  .produtos {
+  .produtos,
+  .diferenciais,
+  .sobre,
+  .contato {
     padding: 4rem 1.5rem;
   }
 
-  .produtos h2 {
+  .produtos h2,
+  .diferenciais h2,
+  .sobre h2 {
     font-size: 2rem;
     text-align: center;
   }
 
-  .cards {
+  .cards,
+  .grid {
     grid-template-columns: 1fr;
   }
 
   .card img {
     height: 200px;
-  }
-
-  /* DIFERENCIAIS */
-  .diferenciais {
-    padding: 4rem 1.5rem;
-  }
-
-  .diferenciais h2 {
-    font-size: 2rem;
-  }
-
-  .grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-
-  /* SOBRE */
-  .sobre {
-    padding: 4rem 1.5rem;
-  }
-
-  .sobre h2 {
-    font-size: 2rem;
-  }
-
-  /* CONTATO */
-  .contato {
-    padding: 4rem 1.5rem;
   }
 
   .whatsapp-btn {
