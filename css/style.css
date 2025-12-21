@@ -220,3 +220,102 @@ footer {
   text-align: center;
   font-size: 0.85rem;
 }
+/* =========================
+   RESPONSIVO - MOBILE
+   ========================= */
+@media (max-width: 768px) {
+
+  /* HEADER */
+  .container {
+    padding: 1.2rem 1.4rem;
+  }
+
+  .header-content {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .logo {
+    height: 90px; /* menor no mobile */
+  }
+
+  nav a {
+    margin: 0 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  /* HERO */
+  .hero {
+    height: auto;
+    padding: 8rem 1.5rem 4rem;
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 2.8rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  /* BOTÃO */
+  .btn-primary {
+    padding: 14px 28px;
+  }
+
+  /* PRODUTOS */
+  .produtos {
+    padding: 4rem 1.5rem;
+  }
+
+  .produtos h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .card img {
+    height: 200px;
+  }
+
+  /* DIFERENCIAIS */
+  .diferenciais {
+    padding: 4rem 1.5rem;
+  }
+
+  .diferenciais h2 {
+    font-size: 2rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  /* SOBRE */
+  .sobre {
+    padding: 4rem 1.5rem;
+  }
+
+  .sobre h2 {
+    font-size: 2rem;
+  }
+
+  /* CONTATO */
+  .contato {
+    padding: 4rem 1.5rem;
+  }
+
+  .whatsapp-btn {
+    width: 100%;
+    max-width: 320px;
+  }
+}
