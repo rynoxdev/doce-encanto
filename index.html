@@ -2,20 +2,28 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Doce Encanto | Confeitaria Artesanal</title>
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <!-- SEO -->
+  <meta name="description" content="Doce Encanto – Bolos e tortas artesanais sob encomenda. Chocolate, leite ninho, morango e muito carinho." />
+  <meta name="keywords" content="bolos, tortas, confeitaria, doce encanto, bolos artesanais" />
+  <meta name="author" content="Doce Encanto" />
 
-  <link rel="stylesheet" href="css/style.css">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
 <header class="header">
   <div class="container header-content">
-    <img src="assets/images/logo.png" alt="Doce Encanto" class="logo">
-
+    <img src="assets/images/logo.png" alt="Doce Encanto" class="logo" />
     <nav>
       <a href="#produtos">Produtos</a>
       <a href="#sobre">Sobre</a>
@@ -25,75 +33,60 @@
 </header>
 
 <section class="hero">
-  <div class="hero-content">
-    <span class="tagline">Confeitaria artesanal</span>
+  <div class="hero-content" data-aos="fade-right">
+    <span class="tagline">Confeitaria Artesanal</span>
     <h1>Doce Encanto</h1>
-    <p>Tortas sofisticadas feitas sob encomenda para momentos especiais</p>
+    <p>Bolos e tortas feitos com carinho para momentos especiais.</p>
     <a href="#contato" class="btn-primary">Fazer encomenda</a>
   </div>
 </section>
 
 <section class="produtos" id="produtos">
-  <h2>Nossas Tortas</h2>
+  <h2 data-aos="fade-up">Nossos Produtos</h2>
 
   <div class="cards">
-    <div class="card">
-      <img src="assets/images/torta-chocolate.jpg">
+    <div class="card" data-aos="zoom-in">
+      <img src="assets/images/torta-chocolate.jpg" alt="Torta de Chocolate">
       <h3>Torta de Chocolate</h3>
       <span class="badge">Sob encomenda</span>
     </div>
 
-    <div class="card">
-      <img src="assets/images/torta-chocolate-morango.jpg">
+    <div class="card" data-aos="zoom-in" data-aos-delay="100">
+      <img src="assets/images/torta-chocolate-morango.jpg" alt="Chocolate com Morango">
       <h3>Chocolate com Morango</h3>
       <span class="badge">Sob encomenda</span>
     </div>
 
-    <div class="card">
-      <img src="assets/images/torta-leite-ninho.jpg">
-      <h3>Leite Ninho</h3>
+    <div class="card" data-aos="zoom-in" data-aos-delay="200">
+      <img src="assets/images/torta-leite-ninho.jpg" alt="Leite Ninho com Morango">
+      <h3>Leite Ninho com Morango</h3>
       <span class="badge">Sob encomenda</span>
     </div>
-
-    <div class="card">
-      <img src="assets/images/torta-morango.jpg">
-      <h3>Morango</h3>
-      <span class="badge">Sob encomenda</span>
-    </div>
-  </div>
-</section>
-
-<section class="diferenciais">
-  <h2>Por que escolher a Doce Encanto</h2>
-  <div class="grid">
-    <div>✔ Ingredientes selecionados</div>
-    <div>✔ Produção artesanal</div>
-    <div>✔ Atendimento personalizado</div>
-    <div>✔ Ideal para eventos especiais</div>
   </div>
 </section>
 
 <section class="sobre" id="sobre">
-  <h2>Sobre Nós</h2>
-  <p>
-    A Doce Encanto produz tortas artesanais sob encomenda,
-    unindo qualidade, cuidado e apresentação impecável
-    para tornar cada momento especial.
+  <h2 data-aos="fade-up">Sobre Nós</h2>
+  <p data-aos="fade-up">
+    A Doce Encanto nasceu do amor pela confeitaria artesanal.
+    Cada receita é preparada com ingredientes selecionados e muito cuidado,
+    tornando cada encomenda única.
   </p>
 </section>
 
 <section class="contato" id="contato">
-  <h2>Faça sua encomenda</h2>
-  <p>Entre em contato pelo WhatsApp</p>
-
-  <a class="whatsapp-btn" href="https://wa.me/5500000000000" target="_blank">
-    Falar no WhatsApp
-  </a>
+  <h2 data-aos="fade-up">Faça sua Encomenda</h2>
+  <p data-aos="fade-up">Clique abaixo e fale direto conosco pelo WhatsApp.</p>
+  <a class="whatsapp-btn">Chamar no WhatsApp</a>
 </section>
 
 <footer>
-  © 2025 Doce Encanto · Confeitaria Artesanal
+  © 2025 Doce Encanto · <span class="by">by RYNØX</span>
 </footer>
+
+<!-- Scripts -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="js/main.js"></script>
 
 </body>
 </html>
